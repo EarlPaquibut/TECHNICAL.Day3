@@ -1,10 +1,6 @@
 ﻿@{
     ViewData["Title"] = "DashBoard";
 }
-@* <div class="text-center">
-    <h1 class="display-4">DashBoard</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div> *@
 
 <div class="search-header">
     <h2 class="dashboard-title">Dashboard</h2>
@@ -32,74 +28,152 @@
 
 <div class="new-book-body">
     <h2 class="new-book-title">New Book</h2>
-    <a href="#" class="view-all-link">See More</a>
+    <a href="#" class="see-more-link">See More</a>
     <div class="book-containers">
         <div class="book-container">
             <img src="~/img/book-test.png" alt="Book 1">
-            <h4>Title of Book 1</h4>
-            <p>Author 1</p>
-            <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            <div class="new-book-info">
+                <h4>Title of Book 1</h4>
+                <p>Author 1</p>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
         </div>
         <div class="book-container">
             <img src="~/img/book-test.png" alt="Book 2">
-            <h4>Title of Book 2</h4>
-            <p>Author 2</p>
-            <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
+            <div class="new-book-info">
+                <h4>Title of Book 2</h4>
+                <p>Author 2</p>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>          
         </div>
         <div class="book-container">
             <img src="~/img/book-test.png" alt="Book 3">
-            <h4>Title of Book 3</h4>
-            <p>Author 3</p>
-            <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            <div class="new-book-info">
+                <h4>Title of Book 3</h4>
+                <p>Author 2</p>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
         </div>
         <div class="book-container">
             <img src="~/img/book-test.png" alt="Book 4">
-            <h4>Title of Book 4</h4>
-            <p>Author 4</p>
-            <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            <div class="new-book-info">
+                <h4>Title of Book 4</h4>
+                <p>Author 2</p>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
         </div>
         <div class="book-container">
             <img src="~/img/book-test.png" alt="Book 5">
-            <h4>Title of Book 5</h4>
-            <p>Author 5</p>
-            <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            <div class="new-book-info">
+                <h4>Title of Book 2</h4>
+                <p>Author 2</p>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="book-list-body">
-    <h2 class="new-book-title">Book List</h2>
+
+    <h2 class="book-list-title">Book List</h2>
+    <a href="#" class="view-all-link">View All</a>
+
+    <div class="book-list-container"> 
+        
+        <div class="book-list">
+
+            <div class="book-item">
+
+                <img src="~/img/book-test.png" alt="Book 1">
+
+                <div class="book-details">
+
+                    <div class="book-info">
+
+                        <h4>Title of Book 1</h4>
+                        <p>Author 1</p>
+                        <span>Reviews: 10</span>
+                        <span>Ratings: 4.5</span>
+
+                    </div>
+
+                 </div>
+
+            </div>
+
+            <div class="book-item">
+
+                <img src="~/img/book-test.png" alt="Book 1">
+
+                <div class="book-details">
+
+                    <div class="book-info">
+
+                        <h4>Title of Book 2</h4>
+                        <p>Author 2</p>
+                        <span>Reviews: 8</span>
+                        <span>Ratings: 4.1</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="book-item">
+
+                <img src="~/img/book-test.png" alt="Book 1">
+
+                <div class="book-details">
+
+                    <div class="book-info">
+
+                        <h4>Title of Book 3</h4>
+                        <p>Author 3</p>
+                        <span>Reviews: 12</span>
+                        <span>Ratings: 4.8</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>  
+        
+    </div>
 
 </div>
 
+  
 

@@ -214,24 +214,23 @@ img {
 .new-book-body {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 20px;
     position: relative;
 }
 
 .new-book-title {
     align-self: flex-start;
-    margin: -20px 0 -30px 0;
+    margin: 0;
 }
 
-.view-all-link {
+.see-more-link {
     align-self: flex-end;
     text-decoration: none;
     color: #E35D6A;
-    margin: 0 0 -20px 0;
+    margin: 0;
 }
 
-.view-all-link:hover {
+.see-more-link:hover {
     color: #E35D6A;
     text-decoration: none;
 }
@@ -240,7 +239,6 @@ img {
     display: flex; 
     flex-wrap: wrap; 
     gap: 10px;
-    justify-content: space-between;
 }
 
 .book-container {
@@ -249,7 +247,15 @@ img {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    text-align: center;
+    text-align: left; /* Align text to the left within the container */
+    align-items: center; /* Align text vertically in the container */
+}
+
+.new-book-info {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .book-container img {
@@ -282,7 +288,73 @@ img {
 /*New Book*/
 
 /*Book List*/
+.book-list-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
 
+.book-list-container {
+    background-color: #ffffff;
+    border: 2px solid #C98276;
+    border-radius: 15px;
+    padding: 20px 20px 0 20px;
+}
+
+.book-list-title {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.view-all-link {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #E35D6A;
+    margin: 0;
+}
+
+.view-all-link:hover {
+    color: #E35D6A;
+    text-decoration: none;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-item {
+    display: flex;
+    background-color: #FCE9DB;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.book-item img {
+    max-width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+}
+
+.book-info p {
+    font-size: 12px;
+}
+
+.book-info span {
+    font-size: 12px;
+}
+
+.book-info h4,
+.book-info p {
+    margin: 0;
+}
 /*Book List*/
 /*dashboard*/
 
