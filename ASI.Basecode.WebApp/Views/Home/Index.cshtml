@@ -30,150 +30,101 @@
     <h2 class="new-book-title">New Book</h2>
     <a href="#" class="see-more-link">See More</a>
     <div class="book-containers">
-        <div class="book-container">
-            <img src="~/img/book-test.png" alt="Book 1">
-            <div class="new-book-info">
-                <h4>Title of Book 1</h4>
-                <p>Author 1</p>
-                <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+        @for (int i = 1; i <= 5; i++)
+        {
+            <div class="book-container" id="book@i">
+                <img src="~/img/book-test.png" alt="Book @i">
+                <div class="new-book-info">
+                    <h4>Title of Book @i</h4>
+                    <p>Author @i</p>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="book-container">
-            <img src="~/img/book-test.png" alt="Book 2">
-            <div class="new-book-info">
-                <h4>Title of Book 2</h4>
-                <p>Author 2</p>
-                <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>          
-        </div>
-        <div class="book-container">
-            <img src="~/img/book-test.png" alt="Book 3">
-            <div class="new-book-info">
-                <h4>Title of Book 3</h4>
-                <p>Author 2</p>
-                <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
-        <div class="book-container">
-            <img src="~/img/book-test.png" alt="Book 4">
-            <div class="new-book-info">
-                <h4>Title of Book 4</h4>
-                <p>Author 2</p>
-                <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
-        <div class="book-container">
-            <img src="~/img/book-test.png" alt="Book 5">
-            <div class="new-book-info">
-                <h4>Title of Book 2</h4>
-                <p>Author 2</p>
-                <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            </div>
-        </div>
+        }
     </div>
 </div>
 
 <div class="book-list-body">
-
     <h2 class="book-list-title">Book List</h2>
     <a href="#" class="view-all-link">View All</a>
-
-    <div class="book-list-container"> 
-        
+    <div class="book-list-container">
         <div class="book-list">
-
-            <div class="book-item">
-
-                <img src="~/img/book-test.png" alt="Book 1">
-
-                <div class="book-details">
-
-                    <div class="book-info">
-
-                        <h4>Title of Book 1</h4>
-                        <p>Author 1</p>
-                        <span>Reviews: 10</span>
-                        <span>Ratings: 4.5</span>
-
+            @for (int i = 1; i <= 3; i++)
+            {
+                <div class="book-item">
+                    <img src="~/img/book-test.png" alt="Book @i">
+                    <div class="book-details">
+                        <div class="book-info">
+                            <h4>Title of Book @i</h4>
+                            <p>Author @i</p>
+                            <span>Reviews: 15</span>
+                            <span>Ratings: 499</span>
+                        </div>
                     </div>
-
-                 </div>
-
-            </div>
-
-            <div class="book-item">
-
-                <img src="~/img/book-test.png" alt="Book 1">
-
-                <div class="book-details">
-
-                    <div class="book-info">
-
-                        <h4>Title of Book 2</h4>
-                        <p>Author 2</p>
-                        <span>Reviews: 8</span>
-                        <span>Ratings: 4.1</span>
-
-                    </div>
-
                 </div>
-
-            </div>
-
-            <div class="book-item">
-
-                <img src="~/img/book-test.png" alt="Book 1">
-
-                <div class="book-details">
-
-                    <div class="book-info">
-
-                        <h4>Title of Book 3</h4>
-                        <p>Author 3</p>
-                        <span>Reviews: 12</span>
-                        <span>Ratings: 4.8</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>  
-        
+            }
+        </div>
     </div>
-
 </div>
+
+<div class="popular-books-body">
+    <h2 class="popular-books-title">Popular Books</h2>
+    <div class="popular-books-containers">
+        @for (int i = 1; i <= 5; i++)
+        {
+            <div class="popular-books-container" id="book@i">
+                <div class="place-badge">@i</div>
+                <img src="~/img/book-test.png" alt="Book @i">
+                <div class="popular-books-info">
+                    <h4>Title of Book @i</h4>
+                    <p>Author @i</p>
+                    <div class="star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <a href="#" class="popular-see-more-link">See More</a>
+</div>
+
+<div class="popular-books-list-body">
+    <div class="popular-books-list-container">
+        <div class="popular-books-list">
+            @for (int i = 6; i <= 8; i++)
+            {
+                <div class="popular-books-list-item">
+                    <div class="popular-books-list-number">@i</div>
+                    <img src="~/img/book-test.png" alt="Book @i">
+                    <div class="popular-books-list-details">
+                        <div class="popular-books-list-info">
+                            <h4>Title of Book @i</h4>
+                            <p>by Author @i</p>
+                            <p>Genre @i</p>
+                            <div class="reviews-ratings">
+                                <span class="reviews">Reviews: 15</span>
+                                <span class="ratings">Ratings: 499</span>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
 
   
 
