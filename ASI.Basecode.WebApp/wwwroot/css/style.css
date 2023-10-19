@@ -471,7 +471,7 @@ img {
 
 }
 .popular-books-list-item img {
-    max-width: 90px;
+    max-width: 80px;
     height: auto;
     margin: 0 20px 10px 0;
 }
@@ -480,7 +480,7 @@ img {
 .popular-books-list-details {
     display: flex;
     flex-direction: column;
-    padding: 10px 0 0 0;
+    padding: 0 0 10px 0;
 }
 
 .popular-books-list-info p {
@@ -492,10 +492,27 @@ img {
     margin: 0;
 }
 
+.go-to-book, fa-chevron-right {
+    color: #000000;
+    text-decoration: none;
+}
+
+    .go-to-book:hover, fa-chevron-right {
+        color: #000000;
+        text-decoration: none;
+    }
+
+/*List*/
 .reviews-ratings {
     display: flex;
     flex-direction: row;
-    margin-top: 20px; 
+    margin-top: 5px;
+}
+
+.popular-reviews-ratings {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 .reviews, .ratings {
@@ -503,12 +520,17 @@ img {
     margin: 2px 0;
 }
 
+.fa-comment {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
 .ratings {
     margin: 2px 20px;
 }
 
 .fa-chevron-right{
-    margin-left: 650px;
+    margin-left: 630px;
     font-size: 30px;
 }
 /*Popular Books List*/
