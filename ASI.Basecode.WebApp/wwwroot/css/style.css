@@ -3,6 +3,7 @@
 @import url( "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
+    /*overflow: hidden;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +11,12 @@
     list-style: none;
     text-decoration: none;
 }
-
+/*.container {
+    margin-left: 200px;
+}*/
+#check:checked ~ .container{
+    margin-left: 200px; 
+}
 /*sidebar navigation*/
 .sidebar {
     position: fixed;
@@ -56,28 +62,27 @@ ul li:hover a {
 label #btn, label #cancel {
     position: fixed;
     cursor: pointer;
-    background: white;
-    /*border-radius: 3px;*/
+    /*background: white;*/
 }
 label #btn {
     left: 40px;
-    top: 10px;
+    top: 30px;
     font-size: 35px;
     color: #E35D6A;
-    /*padding: 6px 12px;*/
-    transition: all .5s;
+    padding: 4px 9px;
+    transition: all .5s ease;
 }
 label #cancel {
     z-index: 1111;
-    left: -195px;
-    top: 10px;
+    left: -250px;
+    top: 30px;
     font-size: 35px;
     color: #E35D6A;
-    /*padding: 4px 9px;*/
+    padding: 4px 9px;
     transition: all .5s ease;
 }
 #check:checked ~ .sidebar{
-    left: 0;
+    left: 0px;
 }
 #check:checked ~ label #btn {
     left: 250px;
@@ -85,7 +90,7 @@ label #cancel {
     pointer-events: none;
 }
 #check:checked ~ label #cancel {
-    left: 220px;
+    left: 250px;
 }
 .user-info {
     display: flex;
@@ -107,11 +112,10 @@ label #cancel {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 10px 10px 10px;
     color: #515151;
    /* margin-left: 200px;*/
 }
-
 
 /*#check:checked ~ .dashboard-title{
     margin-left: 200px; 
@@ -214,7 +218,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: relative;
+    /*position: relative;*/
 }
 
 .new-book-title {
@@ -290,7 +294,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: relative;
+    /*position: relative;*/
 }
 
 .book-list-container {
@@ -360,7 +364,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    position: relative;
+/*    position: relative;*/
 }
 
 .popular-books-title {
@@ -388,13 +392,14 @@ img {
 }
 
 .popular-books-container {
-    position: relative;
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     text-align: left;
     align-items: center;
+    position: relative; 
+    overflow: hidden;
 }
 
 .popular-books-info {
@@ -427,8 +432,13 @@ img {
     left: 0;
     background-color: #FFD700;
     color: #000;
-    padding: 5px 10px;
-    border-radius: 25px 25px 25px 25px;
+    padding: 5px 13px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
 /*Popular Books*/
 
@@ -436,7 +446,7 @@ img {
 .popular-books-list-body {
     display: flex;
     flex-direction: column;
-    position: relative;
+    /*position: relative;*/
 }
 
 .popular-books-list-container {
