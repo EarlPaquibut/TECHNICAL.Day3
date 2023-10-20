@@ -14,12 +14,17 @@
 /*sidebar navigation*/
 .sidebar {
     position: fixed;
-    left: -250px;
-    width: 250px;
+    left: -270px;
+    width: 270px;
     height: 100%;
     background: #ffffff;
     transition: all .5s ease;
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+}
+
+.sidebar-container {
+    margin: -25px 0 0 0;
+    padding: -25px 0 0 0;
 }
 
 .sidebar header {
@@ -28,25 +33,34 @@
     text-align: center;
     background: #ffffff;
     user-select: none;
+    margin: 20px 0 40px 0;
+}
+
+.sidebar ul{
+    margin: 0 0 0 30px;
 }
 
 .sidebar ul a {
     display: block;
-    height: 100%;
-    width: 100%;
-    line-height: 65px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    line-height: 50px;
     font-size: 20px;
+    font-weight: bold;
     color: #E35D6A;
     padding-left: 40px;
 }
 
-.sidebar ul a:hover {
-    text-decoration: none;
-}
-
-ul li:hover a {
-    padding-left: 50px;
-}
+    .sidebar ul a:hover {
+        text-decoration: none;
+        color: #000000;
+        background: #EEC1AD;
+        padding-left: 10px;
+    }
+        .sidebar ul a:hover i {
+            color: #E35D6A;
+        }
 
 .sidebar ul a i {
     margin-right: 16px;
@@ -63,20 +77,22 @@ label #btn, label #cancel {
 
 label #btn {
     left: 40px;
-    top: 30px;
+    top: 10px;
     font-size: 35px;
     color: #E35D6A;
     padding: 4px 9px;
+    margin: 0 0 0 -20px;
     transition: all .5s ease;
 }
 
 label #cancel {
     z-index: 1111;
-    left: -250px;
-    top: 30px;
+    left: -270px;
+    top: 10px;
     font-size: 35px;
     color: #E35D6A;
     padding: 4px 9px;
+    margin: 0 0 0 -20px;
     transition: all .5s ease;
 }
 
@@ -97,16 +113,18 @@ label #cancel {
 .user-info {
     display: flex;
     flex-direction: column; 
-    align-items: center; 
+    align-items: flex-start; 
 }
 
 .username {
     font-size: 30px;
+    font-weight: bold;
     color: #515151;
+    margin: 0 0 -10px 0;
 }
 
 .email {
-    font-size: 15px;
+    font-size: 12px;
     color: #A6A2A2;
 }
 /*sidebar navigation*/
@@ -116,7 +134,7 @@ label #cancel {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px 10px 10px;
+    padding: 30px 10px 10px 10px;
     color: #515151;
 }
 
@@ -394,8 +412,7 @@ img {
     border-radius: 10px;
     text-align: left;
     align-items: center;
-    position: relative; 
-    overflow: hidden;
+   /* position: relative; */
 }
 
 .popular-books-info {
@@ -641,8 +658,8 @@ header {
 }
 
 .dp {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-color: #626262;
     border-radius: 50%;
     display: flex;
@@ -663,7 +680,7 @@ header {
 }
 
 .dpicn {
-    height: 42px;
+    height: 52px;
 }
 
 .main {
