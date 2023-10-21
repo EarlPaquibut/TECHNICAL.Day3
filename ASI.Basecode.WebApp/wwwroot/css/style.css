@@ -260,13 +260,25 @@ img {
     gap: 17px;
 }
 
+.new-book-link {
+    color: #000000;
+    margin: 0 25px 0 0;
+}
+    .new-book-link:hover {
+        color: #000000;
+        text-decoration: none;
+        border: 2px solid #C98276;
+        border-radius: 12px;
+        box-shadow: 0px 4px 5px -3px #888;
+    }
+
 .book-container {
-    width: 200px;
+/*    width: 200px;*/
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
-    text-align: left; 
-    align-items: center; 
+    text-align: left;
+    align-items: center;
 }
 
 .new-book-info {
@@ -405,6 +417,15 @@ img {
     margin: 20px;
 }
 
+.popular-books-link{
+    color: #000000;
+}
+.popular-books-link:hover {
+    color: #000000;
+    text-decoration:none;
+    padding: 5px;
+}
+
 .popular-books-container {
     padding: 10px;
     background-color: #fff;
@@ -412,7 +433,7 @@ img {
     border-radius: 10px;
     text-align: left;
     align-items: center;
-   /* position: relative; */
+    /*position: relative; */
 }
 
 .popular-books-info {
@@ -443,23 +464,35 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #FFD700;
+    /*background-color: #FFD700;*/
     color: #000;
-    padding: 5px 13px;
+    /*padding: 5px 13px;*/
     border-radius: 100px;
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 14px;
+/*    font-size: 14px;*/
     font-weight: bold;
 }
-/*Popular Books*/
 
-/*Popular Books List*/
-.popular-books-list-body {
-    display: flex;
-    flex-direction: column;
+.place-badge h4 {
+    font-size: 30px;
+    color: #ffff;
+    position: relative;
+    left: 13px;
+    top: -65px
 }
+
+.fa-award {
+    font-size: 60px;
+    color: #87CEEB;
+}
+    /*Popular Books*/
+    /*Popular Books List*/
+    .popular-books-list-body {
+        display: flex;
+        flex-direction: column;
+    }
 
 .popular-books-list-container {
     background-color: #ffffff;
@@ -481,7 +514,7 @@ img {
 .popular-books-list-item {
     display: flex;
     border-radius: 15px;
-    margin-bottom: 10px;
+    margin: 10px;
     align-items: center;
     border-bottom: 3px solid #EEC1AD
 }
@@ -570,7 +603,8 @@ img {
 }
 
 body {
-    background-color: var(--background-color2);
+/*        background-color: #D0D0D0;*/
+/*    background-color: var(--background-color2);*/
     max-width: 100%;
     overflow-x: hidden;
 }
